@@ -28,5 +28,6 @@ public class Contrat {
     private Reservation reservation;
 
     @OneToMany(mappedBy = "contrat")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Paiement> paiements;
 }
